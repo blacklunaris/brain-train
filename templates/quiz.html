@@ -7,6 +7,7 @@
     <title>Personal Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="homepage.css">
+    <script type="text/javascript" src="quiz.js"></script>
 
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
     <!--[if lt IE 9]>
@@ -14,7 +15,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body >
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
@@ -26,12 +27,11 @@
         <li><a class="active" href="#home">Home</a></li>
         <li><a class="active" href="#quiz">Quiz</a></li>
         <li><a href="#profile">Profile</a></li>
-
-
       </ul>
     </nav>
     
        <div id="quiz"></div>
+       <button onclick="buildQuiz()">Start Quiz</button>
        <button id="submit">Submit Quiz</button>
        
        <div id="results"></div>
